@@ -1,50 +1,120 @@
-# Welcome to your Expo app 👋
+# Welcome to Payslips app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native (Expo) app for managing and viewing payslips. Supports previewing PDFs/images, downloading files to device storage or gallery, and is designed for a clean, polished mobile UX.
+## Installation & Setup
 
-## Get started
+## Table of Contents
 
-1. Install dependencies
+* Features
 
-   ```bash
-   npm install
-   ```
+* Technologies
 
-2. Start the app
+* Installation & Setup
 
-   ```bash
-   npx expo start
-   ```
+* File Handling
 
-In the output, you'll find options to open the app in a
+* Theming & Styling
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* License
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Features
 
-## Get a fresh project
+* Payslip list and details screens
 
-When you're ready, run:
+* In-app PDF viewer
 
+* Image preview modal
+
+* Download images to gallery
+
+* Save and share PDFs
+
+* Context-based state management
+
+* Fully typed with TypeScript
+
+* Extracted theme for colors, spacing, typography
+
+## Technologies
+
+* React Native (Expo)
+
+* TypeScript
+
+* React Navigation (Native Stack)
+
+* Expo File System & Sharing
+
+* Expo Media Library
+
+## Installation & Setup
+
+Clone the repository:
 ```bash
-npm run reset-project
+git clone https://github.com/MouazAlzahabi/Payslips
+
+cd <repo-folder>
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install dependencies:
+```bash
+npm install
 
-## Learn more
+# or
 
-To learn more about developing your project with Expo, look at the following resources:
+yarn install
+   ```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+Install Expo CLI globally (if not installed):
 
-Join our community of developers creating universal apps.
+```bash
+npm install -g expo-cli
+   ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+Install peer dependencies:
+```bash
+npx expo install react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated react-native-pager-view
+npx expo install @react-navigation/native @react-navigation/native-stack
+npx expo install expo-file-system expo-sharing expo-media-library
+
+   ```
+
+
+Start the app:
+```bash
+expo start
+
+   ```
+
+Open on iOS simulator, Android emulator, or Expo Go app.
+
+## Notes:
+
+Media library features (image save) require a physical device or properly configured emulator with permissions.
+
+PDFs saved to app storage can be opened via native file apps.
+
+## File Handling
+
+Images: saved directly to device gallery using expo-media-library.
+
+PDFs: saved to app storage with option to share or open in native apps.
+
+Handles errors gracefully with alerts.
+
+## Theming & Styling
+
+All screens use a centralized theme in theme.ts.
+
+Colors, spacing, and typography are extracted for consistency.
+
+Each screen folder contains its own style file.
+
+Shared components also have extracted styles.
+
+## License
+
+MIT License © 2025
+
