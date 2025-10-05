@@ -1,7 +1,6 @@
 # Welcome to Payslips app 👋
 
 A React Native (Expo) app for managing and viewing payslips. Supports previewing PDFs/images, downloading files to device storage or gallery, and is designed for a clean, polished mobile UX.
-## Installation & Setup
 
 ## Table of Contents
 
