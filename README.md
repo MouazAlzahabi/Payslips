@@ -5,17 +5,12 @@ A React Native (Expo) app for managing and viewing payslips. Supports previewing
 
 ## Table of Contents
 
-* Features
-
-* Technologies
-
-* Installation & Setup
-
-* File Handling
-
-* Theming & Styling
-
-* License
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation & Setup](#installation--setup)
+- [File Handling](#file-handling)
+- [Theming & Styling](#theming--styling)
+- [License](#license)
 
 ## Features
 
@@ -90,7 +85,7 @@ expo start
 
 Open on iOS simulator, Android emulator, or Expo Go app.
 
-## Notes:
+#### Notes:
 
 Media library features (image save) require a physical device or properly configured emulator with permissions.
 
